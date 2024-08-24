@@ -1,0 +1,21 @@
+{
+  "name": "testtask",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "open": "cypress open",
+    "test": "cypress run --spec cypress/e2e/*"
+  },
+  "author": "Sadovnikov",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "8.1.0",
+    "cypress": "^13.13.3",
+    "date-fns": "^3.6.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
