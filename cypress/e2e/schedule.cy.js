@@ -8,11 +8,11 @@ import {checkout} from "../pages/checkout.js";
 import {eventPage} from "../pages/event.js";
 
 
-describe('template spec', () => {
+describe('Book a ticket', () => {
     beforeEach(() => {
         eventPage.openEvenPage()
     })
-    it('passes', () => {
+    it('should select event, book random event, and validate checkout page', () => {
         calendar.selectDate('2024-10', 10, "18:30")
         const sector = offers.proceedToSeatSelecting(0, "Bronze")
 
